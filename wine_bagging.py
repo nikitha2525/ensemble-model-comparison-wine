@@ -33,3 +33,10 @@ bagging.fit(x_train,y_train)
 y_pred = bagging.predict(x_test)
 print("Accuracy score :",accuracy_score(y_test,y_pred))
 
+
+plt.hist(wine.target)
+plt.xlabel('Wine class')
+plt.ylabel('Frequency')
+plt.title('Distribution of the wine class')
+plt.show()
+
